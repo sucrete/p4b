@@ -2,11 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Neue Haas", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-.container {
-  /* padding: 0 2rem; */
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .main {
@@ -14,12 +10,6 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-
-.title,
-.description {
-  /* text-align: center; */
 }
 
 a {
@@ -30,86 +20,76 @@ a {
 * {
   box-sizing: border-box;
 }
+
 .bigdiv {
   background-color: #fff3ac;
   padding-left: 4rem;
   padding-bottom: 8rem;
 }
+
 .name {
   font-family: "Apple Garamond";
   font-size: 227px;
   line-height: 75%;
   font-weight: unset;
   text-align: left;
-  margin-block-end: 0rem;
-  margin-block-start: 2.5rem
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
+  -webkit-margin-before: 2.5rem;
+          margin-block-start: 2.5rem;
 }
+
 .pron {
   font-size: 7px;
   font-family: "Melody Regular";
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
 .descripsh {
   width: 70%;
   font-family: "Apple Garamond";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 120%;
   text-align: justify;
   padding-left: 7%;
   margin-top: 4rem;
   /* letter-spacing: 2px; */
 }
+
 .barkport {
-  font-family: "Melody Regular", sans-serif;
+  font-family: "GT America Exp Light It", sans-serif;
   text-transform: uppercase;
   /* text-decoration: underline; */
   font-size: 14px;
   padding-right: 5.5rem;
   letter-spacing: 1px;
   /* margin-top: -11px;   */
-  float:left;
+  float: left;
 }
+
 .bottomdiv {
   background: WHITE;
   min-height: 100vh;
 }
+
 @font-face {
-  font-family: 'Apple Garamond';
-  src: url('/AppleGaramond-Light.ttf')  format('truetype');
+  font-family: "Apple Garamond";
+  src: url("/AppleGaramond-Light.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Apple Garamond Italic';
-  src: url('/AppleGaramond-LightItalic.ttf')  format('truetype');
+  font-family: "Apple Garamond Italic";
+  src: url("/AppleGaramond-LightItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Melody Regular";
   src: url("/BLMelody-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: "Melody Book";
-  src: url("/BLMelody-Book.otf") format("opentype");
-}
-@font-face {
-  font-family: "Melody Medium";
-  src: url("/BLMelody-Medium.otf") format("opentype");
-}
-@font-face {
-  font-family: "Melody Light";
-  src: url("/BLMelody-Light.otf") format("opentype");
-}
-@font-face {
   font-family: "Jabin";
-  src: url("/Jabin-Typeface.woff2") format('woff2');
+  src: url("/Jabin-Typeface.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Forma Regular";
-  src: url("/FormaDJRMicro-Regular.woff2") format('woff');
-}@font-face {
-  font-family: "Forma Bold";
-  src: url("/FormaDJRText-Bold.woff2") format('woff2');
-}
-@font-face {
-  font-family: "Forma Light";
-  src: url("/FormaDJRText-Light.woff2") format('woff2');
-}
+  font-family: "GT America Exp Light It";
+  src: url("/GT-America-Expanded-Light-Italic-Trial.otf") format("opentype");
+}/*# sourceMappingURL=globals.css.map */

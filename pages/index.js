@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Calvin from '../components/Calvin'
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
             Wm.<br />
             Andrée
           </h1>
-          <div className='pron'>[pron. wil on-dray]</div>
+          <div className='pron'>[pron. wil-yum on-dray]</div>
           <div className='descripsh'>
             <div className="barkport">
             barkley portfolio
@@ -25,50 +26,11 @@ export default function Home() {
             Mr. Collins, meanwhile, was meditating in solitude on what had passed. He thought too well of himself to comprehend on what motives his cousin could refuse him; and though his pride was hurt, he suffered in no other way. His regard for her was quite imaginary; and the possibility of her deserving her mother’s reproach prevented his feeling any regret.
 While the family were in this confusion, Charlotte Lucas came to spend the day with them. She was met in the vestibule by Lydia, who, flying to her, cried in a half whisper, “I am glad you are come, for there is such fun here! What do you think has happened this morning? Mr. Collins has made an offer to Lizzy, and she will not have him.”          </div>
         </div>
-        <section className='bottomdiv'></section>
-        {/* <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div> */}
+        <section className='bottomdiv'>
+          <h1 className="barkport">recent work</h1>
+          <Calvin/>
+        </section>
       </main>
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
     </div>
   )
 }
