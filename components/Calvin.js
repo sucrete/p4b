@@ -15,7 +15,7 @@ const imageSlides = slides.map((slide, index) => {
             <div className="imagesContainer">
               <ul>{imageSlides}</ul>
             </div>
-            <span className="caption">Assets for singer Calvin Todd</span>
+            <span className="caption">Assets for professional southwestern person and singer Calvin Todd</span>
         </div>
       </>
     );

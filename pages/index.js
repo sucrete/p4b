@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Calvin from '../components/Calvin'
 
@@ -21,14 +21,18 @@ export default function Home() {
           <div className='pron'>[pron. wil-yum on-dray]</div>
           <div className='descripsh'>
             <div className="barkport">
-            barkley portfolio
+              barkley portfolio
             </div>
             Mr. Collins, meanwhile, was meditating in solitude on what had passed. He thought too well of himself to comprehend on what motives his cousin could refuse him; and though his pride was hurt, he suffered in no other way. His regard for her was quite imaginary; and the possibility of her deserving her mother’s reproach prevented his feeling any regret.
-While the family were in this confusion, Charlotte Lucas came to spend the day with them. She was met in the vestibule by Lydia, who, flying to her, cried in a half whisper, “I am glad you are come, for there is such fun here! What do you think has happened this morning? Mr. Collins has made an offer to Lizzy, and she will not have him.”          </div>
+            While the family were in this confusion, Charlotte Lucas came to spend the day with them. She was met in the vestibule by Lydia, who, flying to her, cried in a half whisper, “I am glad you are come, for there is such fun here! What do you think has happened this morning? Mr. Collins has made an offer to Lizzy, and she will not have him.”
+            <div className='guiderails'></div>
+          </div>
         </div>
         <section className='bottomdiv'>
-          <h1 className="barkport">recent work</h1>
-          <Calvin/>
+        <div className='guiderails2'></div>
+          <h1 className="barkport recentwork">recent work</h1>
+          
+          <Calvin />
         </section>
       </main>
     </div>

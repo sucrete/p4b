@@ -1,15 +1,27 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.imagesContainer ul {
+  list-style: none;
+  position: relative;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+.imagesContainer ul li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
-.main {
-  min-height: 100vh;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+.guiderails {
+  border-style: none solid none solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 0.5px;
+  height: 60px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.caption {
+  font-family: "Apple Garamond";
+  color: yellow;
 }
 
 a {
@@ -22,9 +34,18 @@ a {
 }
 
 .bigdiv {
-  background-color: #fff3ac;
+  background-color: #f9eeb0;
   padding-left: 4rem;
-  padding-bottom: 8rem;
+  padding-bottom: 1rem;
+}
+
+.guiderails2 {
+  width: 63%;
+  margin-left: 7%;
+  border-style: none solid none solid;
+  border-color: black;
+  border-width: 0.5px;
+  height: 60px;
 }
 
 .name {
@@ -69,8 +90,104 @@ a {
 }
 
 .bottomdiv {
-  background: WHITE;
+  background: rgb(245, 243, 239);
   min-height: 100vh;
+  padding-left: 4rem;
+  padding-top: 10px;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+}
+.bottomdiv .recentwork {
+  padding-left: 7%;
+  padding-bottom: 70px;
+  color: black;
+}
+
+.pane {
+  width: 70%;
+  padding-left: 7%;
+  height: 900px;
+}
+.pane .imagesContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 21px;
+}
+.pane .imagesContainer ul {
+  height: 100%;
+  width: 100%;
+}
+
+.calvin {
+  margin-top: 30px;
+}
+.calvin .imagesContainer {
+  background: #877B00;
+}
+.calvin .imagesContainer ul .liImage--0 {
+  -webkit-animation: xfade--cal 15.57s 0s infinite;
+          animation: xfade--cal 15.57s 0s infinite;
+}
+.calvin .imagesContainer ul .liImage--1 {
+  -webkit-animation: sixNine--cal 0.69s 4.5s forwards, xfade--cal 15.57s 5.19s infinite;
+          animation: sixNine--cal 0.69s 4.5s forwards, xfade--cal 15.57s 5.19s infinite;
+}
+.calvin .imagesContainer ul .liImage--2 {
+  -webkit-animation: sixNine--cal 0.69s 9.69s forwards, xfade--cal 15.57s 10.38s infinite;
+          animation: sixNine--cal 0.69s 9.69s forwards, xfade--cal 15.57s 10.38s infinite;
+}
+@-webkit-keyframes xfade--cal {
+  0% {
+    opacity: 1;
+  }
+  28.901734104% {
+    opacity: 1;
+  }
+  33.3333333333% {
+    opacity: 0;
+  }
+  95.5684007707% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes xfade--cal {
+  0% {
+    opacity: 1;
+  }
+  28.901734104% {
+    opacity: 1;
+  }
+  33.3333333333% {
+    opacity: 0;
+  }
+  95.5684007707% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes sixNine--cal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sixNine--cal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.calvin .imagesContainer ul .liImage--0, .calvin .imagesContainer ul .liImage--1, .calvin .imagesContainer ul .liImage--2 {
+  transform: scale(0.8) translate(-62%, -62%);
 }
 
 @font-face {
@@ -92,4 +209,17 @@ a {
 @font-face {
   font-family: "GT America Exp Light It";
   src: url("/GT-America-Expanded-Light-Italic-Trial.otf") format("opentype");
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=globals.css.map */
