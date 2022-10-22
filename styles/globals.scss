@@ -6,7 +6,7 @@
   // n = number of slides
   // b = duration of crossfade
   // delay = a+b
-  $n: $slideNumber + 1;
+  $n: $slideNumber +1;
   $time: ($n * 1s) * (5.19);
   $t: ($n * 1) * (5.19);
   // _2 = percentage where last of full visibility starts to transition
@@ -16,93 +16,89 @@
   $_2: calc(4.5 / $t) * 100%;
   $_3: calc(1 / $n) * 100%;
   $_4: 100% - calc(0.69 / $t * 100%);
+
   @for $i from 0 through $slideNumber {
     $delay: $i * 5.19s;
-    @if $i == 0 {
+
+    @if $i ==0 {
       .liImage--#{$i} {
         animation: xfade--#{$uniqueName} $time $delay infinite;
       }
-    } @else {
+    }
+
+    @else {
       $incrementer: $i - 1;
       $buffer: $incrementer * 5.19s;
-      $_69delay: $buffer + 4.5s;
+      $_69delay: $buffer +4.5s;
+
       .liImage--#{$i} {
         animation: sixNine--#{$uniqueName} 0.69s $_69delay forwards,
-          xfade--#{$uniqueName} $time $delay infinite;
+        xfade--#{$uniqueName} $time $delay infinite;
       }
     }
   }
+
   @keyframes xfade--#{$uniqueName} {
     0% {
       opacity: 1;
     }
+
     #{$_2} {
       opacity: 1;
     }
+
     #{$_3} {
       opacity: 0;
     }
+
     #{$_4} {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
+
   @keyframes sixNine--#{$uniqueName} {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
   }
 }
-.imagesContainer {
-  ul {
-    list-style: none;
-    position: relative;
-    padding-inline-start: 0px;
-    li {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-    }
-  }
-}
+
 .guiderails {
   border-style: none solid none solid;
-  border-color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, .5);
   border-width: .5px;
   height: 60px;
   width: 100%;
   margin-top: 1rem;
 }
-.caption {
-  font-family: "Apple Garamond";
-  color: yellow;
-}
+
 a {
   color: inherit;
   text-decoration: none;
-} 
+}
 
 * {
   box-sizing: border-box;
-} 
+}
+
 .bigdiv {
-  background-color: #f9eeb0;
+  background-color: #fef5bf;
   padding-left: 4rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
+
+  & * {
+    color: rgb(46, 42, 21);
+  }
 }
-.guiderails2 {
-  width: 63%;
-  margin-left: 7%;
-  border-style: none solid none solid;
-  border-color: black;
-  border-width: .5px;
-  height: 60px;
-}
+
 .name {
   font-family: "Apple Garamond";
   font-size: 227px;
@@ -112,12 +108,14 @@ a {
   margin-block-end: 0rem;
   margin-block-start: 2.5rem;
 }
+
 .pron {
   font-size: 7px;
   font-family: "Melody Regular";
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
 .descripsh {
   width: 70%;
   font-family: "Apple Garamond";
@@ -128,66 +126,99 @@ a {
   margin-top: 4rem;
   /* letter-spacing: 2px; */
 }
+
 .barkport {
   font-family: "GT America Exp Light It", sans-serif;
   text-transform: uppercase;
   /* text-decoration: underline; */
   font-size: 14px;
+  color:black;
   padding-right: 5.5rem;
   letter-spacing: 1px;
   /* margin-top: -11px;   */
-  float:left;
+  float: left;
 }
+
 .bottomdiv {
-  // background: #877B00;
-  background: rgb(245, 243, 239);
+  background: rgb(233, 231, 216);
   min-height: 100vh;
   padding-left: 4rem;
-  padding-top: 10px;
+  padding-top: 4rem;
   padding-bottom: 5rem;
-  padding-top: 1rem;
+
   .recentwork {
     padding-left: 7%;
     padding-bottom: 70px;
     color: black;
+    visibility: hidden;
   }
 }
+
 .pane {
   width: 70%;
   padding-left: 7%;
-  height: 900px;
-  
+  height: 818px;
+
   .imagesContainer {
     width: 100%;
     height: 100%;
-    border-radius: 21px;
     ul {
       height: 100%;
       width: 100%;
+      list-style: none;
+      position: relative;
+      padding-inline-start: 0px;
+
+      li {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        border-radius: 8px;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
+  .caption {
+    font-family: "Apple Garamond";
+    padding-left: 5px;
+  }
 }
+
 .calvin {
   margin-top: 30px;
   .imagesContainer {
-    background: #877B00;
     ul {
-      @include slideShow(2,"cal");
-      .liImage--0, .liImage--1, .liImage--2 {
-        transform: scale(.8) translate(-62%, -62%);
+      @include slideShow(2, "cal");
+      // .liImage--0, .liImage--1, .liImage--2 {
 
-      }
+      // }
+
+    }
+  }
+}
+.votr {
+  margin-top: 30px;
+  .imagesContainer {
+    ul {
+      @include slideShow(1, "cal");
+      // .liImage--0, .liImage--1, .liImage--2 {
+
+      // }
+
     }
   }
 }
 
 @font-face {
   font-family: 'Apple Garamond';
-  src: url('/AppleGaramond-Light.ttf')  format('truetype');
+  src: url('/AppleGaramond-Light.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Apple Garamond Italic';
-  src: url('/AppleGaramond-LightItalic.ttf')  format('truetype');
+  src: url('/AppleGaramond-LightItalic.ttf') format('truetype');
 }
 
 
@@ -217,10 +248,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
 .main {
   min-height: 100vh;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-

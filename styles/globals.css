@@ -1,27 +1,10 @@
-.imagesContainer ul {
-  list-style: none;
-  position: relative;
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
-}
-.imagesContainer ul li {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
 .guiderails {
   border-style: none solid none solid;
-  border-color: rgb(0, 0, 0);
+  border-color: rgba(0, 0, 0, 0.5);
   border-width: 0.5px;
   height: 60px;
   width: 100%;
   margin-top: 1rem;
-}
-
-.caption {
-  font-family: "Apple Garamond";
-  color: yellow;
 }
 
 a {
@@ -34,18 +17,12 @@ a {
 }
 
 .bigdiv {
-  background-color: #f9eeb0;
+  background-color: #fef5bf;
   padding-left: 4rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
-
-.guiderails2 {
-  width: 63%;
-  margin-left: 7%;
-  border-style: none solid none solid;
-  border-color: black;
-  border-width: 0.5px;
-  height: 60px;
+.bigdiv * {
+  color: rgb(46, 42, 21);
 }
 
 .name {
@@ -83,6 +60,7 @@ a {
   text-transform: uppercase;
   /* text-decoration: underline; */
   font-size: 14px;
+  color: black;
   padding-right: 5.5rem;
   letter-spacing: 1px;
   /* margin-top: -11px;   */
@@ -90,39 +68,52 @@ a {
 }
 
 .bottomdiv {
-  background: rgb(245, 243, 239);
+  background: rgb(233, 231, 216);
   min-height: 100vh;
   padding-left: 4rem;
-  padding-top: 10px;
+  padding-top: 4rem;
   padding-bottom: 5rem;
-  padding-top: 1rem;
 }
 .bottomdiv .recentwork {
   padding-left: 7%;
   padding-bottom: 70px;
   color: black;
+  visibility: hidden;
 }
 
 .pane {
   width: 70%;
   padding-left: 7%;
-  height: 900px;
+  height: 818px;
 }
 .pane .imagesContainer {
   width: 100%;
   height: 100%;
-  border-radius: 21px;
 }
 .pane .imagesContainer ul {
   height: 100%;
   width: 100%;
+  list-style: none;
+  position: relative;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+.pane .imagesContainer ul li {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  border-radius: 8px;
+}
+.pane .imagesContainer ul li img {
+  width: 100%;
+}
+.pane .caption {
+  font-family: "Apple Garamond";
+  padding-left: 5px;
 }
 
 .calvin {
   margin-top: 30px;
-}
-.calvin .imagesContainer {
-  background: #877B00;
 }
 .calvin .imagesContainer ul .liImage--0 {
   -webkit-animation: xfade--cal 15.57s 0s infinite;
@@ -186,8 +177,42 @@ a {
     opacity: 1;
   }
 }
-.calvin .imagesContainer ul .liImage--0, .calvin .imagesContainer ul .liImage--1, .calvin .imagesContainer ul .liImage--2 {
-  transform: scale(0.8) translate(-62%, -62%);
+
+.votr {
+  margin-top: 30px;
+}
+.votr .imagesContainer ul .liImage--0 {
+  -webkit-animation: xfade--cal 10.38s 0s infinite;
+          animation: xfade--cal 10.38s 0s infinite;
+}
+.votr .imagesContainer ul .liImage--1 {
+  -webkit-animation: sixNine--cal 0.69s 4.5s forwards, xfade--cal 10.38s 5.19s infinite;
+          animation: sixNine--cal 0.69s 4.5s forwards, xfade--cal 10.38s 5.19s infinite;
+}
+@keyframes xfade--cal {
+  0% {
+    opacity: 1;
+  }
+  43.3526011561% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  93.3526011561% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes sixNine--cal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @font-face {

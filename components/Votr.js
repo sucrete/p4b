@@ -1,17 +1,17 @@
 const slides = [
-    <img src="/calloval2.png" />,
-    <img src="/calbeats2.png" />,
-    <img src="/calvinstandsalone2.png" />,
+    <img src="/votrlogo.png" />,
+    // <img src="/voterbadge.png" />,
+    <img src="votergraphic.png" />,
   ];
 
 const imageSlides = slides.map((slide, index) => {
     return <li key={`imagesforCal--${index}`} className={`liImage liImage--${index}`}>{slide}</li>;
 });
 
-  export default function Calvin() {
+  export default function Votr() {
     return (
       <>
-        <div className="pane calvin">
+        <div className="pane votr">
             <div className="imagesContainer">
               <ul>{imageSlides}</ul>
             </div>
