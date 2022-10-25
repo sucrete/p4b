@@ -1,11 +1,34 @@
 import Head from 'next/head'
 // import Image from 'next/image'
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 import Calvin from '../components/Calvin'
 import Votr from '../components/Votr'
 import CnC from '../components/CnC'
 
 export default function Home() {
+  const [isShownForma, setIsShownForma] = useState(false);
+  const [isShownSkelter, setIsShownSkelter] = useState(false);
+  const [isShownAmerica, setIsShownAmerica] = useState(false);
+  const [isShownRoobert, setIsShownRoobert] = useState(false);
+  const index = {
+    forma: {
+      yay: () => setIsShownForma(true),
+      nay: () => setIsShownForma(false)
+    },
+    america: {
+      yay: () => setIsShownAmerica(true),
+      nay: () => setIsShownAmerica(false)
+    },
+    skelter: {
+      yay: () => setIsShownSkelter(true),
+      nay: () => setIsShownSkelter(false)
+    },
+    roobert: {
+      yay: () => setIsShownRoobert(true),
+      nay: () => setIsShownRoobert(false)
+    },
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -15,6 +38,28 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        {isShownForma && (
+          <img
+            className="fontImage forma"
+            src="/FormaFont.svg"
+          />
+        )}
+        {isShownAmerica && (
+          <img className="fontImage america" src="/AmericaFont.svg" />
+        )}
+        {isShownSkelter && (
+          <img
+            className="fontImage skelter"
+            src="/SkelterFont.svg"
+          />
+        )}
+        {isShownRoobert && (
+          <img
+            className="fontImage roobert"
+            src="/RoobertFont.svg"
+          >
+          </img>
+        )}
         <div className='bigdiv'>
           <h1 className="name">
             Will<br />
@@ -53,7 +98,7 @@ export default function Home() {
                     <li><a href="mailto:williamandree@gmail.com">williamandree@gmail.com</a></li>
                     <li><a href="tel:5738202616">(573) 820-2616</a></li>
                   </ul>
-                  <h3 className="bskillz" style={{marginBlockStart: "1rem"}}>
+                  <h3 className="bskillz" style={{ marginBlockStart: "1rem" }}>
                     favorite designers
                   </h3>
                   <ul>
@@ -67,10 +112,10 @@ export default function Home() {
                     Fonts I ❤
                   </h3>
                   <ul>
-                    <li className='roobert'>Roobert</li>
-                    <li className='america'>GT America</li>
-                    <li className='skelter'>Skelter</li>
-                    <li className='forma'>Forma</li>
+                    <li className='roobert font' onMouseEnter={index.roobert.yay} onMouseLeave={index.roobert.nay}>Roobert</li>
+                    <li className='america font' onMouseEnter={index.america.yay} onMouseLeave={index.america.nay}>GT America</li>
+                    <li className='skelter font' onMouseEnter={index.skelter.yay} onMouseLeave={index.skelter.nay}>Skelter</li>
+                    <li className='forma font' onMouseEnter={index.forma.yay} onMouseLeave={index.forma.nay}>Forma</li>
                   </ul>
                 </div>
               </div>
@@ -96,14 +141,6 @@ export default function Home() {
           <br />
           <br />
         </section>
-        <div className='fontsContainer subcontainer'>
-          <h3 className="bskillz">
-            favorite fonts at the moment
-          </h3>
-          <ul>
-            <li><img className="font" src="/SkelterFont.png" /></li>
-          </ul>
-        </div>
       </main>
     </div>
   )

@@ -98,10 +98,6 @@ a {
   height: 80px;
 }
 
-.forma {
-  cursor: url("/FormaFont.png"), pointer;
-}
-
 .bskillz {
   font-family: "GT America Exp Bold", sans-serif;
   text-transform: uppercase;
@@ -110,6 +106,29 @@ a {
           margin-block-end: 0.1rem;
   -webkit-margin-before: 0.5rem;
           margin-block-start: 0.5rem;
+}
+
+.font {
+  cursor: ne-resize;
+  text-decoration: underline;
+}
+
+.fontImage {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+}
+.fontImage.forma {
+  height: 50px;
+}
+.fontImage.america {
+  height: 50px;
+}
+.fontImage.roobert {
+  height: 50px;
+}
+.fontImage.skelter {
+  height: 150px;
 }
 
 .pane.cnc .imagesContainer ul li {

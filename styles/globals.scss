@@ -108,12 +108,14 @@ a {
   margin-block-start: 2.5rem;
   // color: #C4FF5D;
 }
+
 ul {
   list-style: none;
-      position: relative;
-      padding-inline-start: 0px;
-      margin-block-start: 0px;
+  position: relative;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
 }
+
 .pron {
   font-size: .45rem;
   font-family: "Melody Regular";
@@ -129,6 +131,7 @@ ul {
   text-align: justify;
   padding-left: 7%;
   margin-top: 4rem;
+
   /* letter-spacing: 2px; */
   &--2 {
     width: 100%;
@@ -147,21 +150,24 @@ ul {
   letter-spacing: .5px;
   /* margin-top: -11px;   */
   float: left;
+
   &--2 {
     color: black;
   }
 }
+
 a {
   text-decoration: underline;
 }
+
 .detailsContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   column-gap: 70px;
-  .subcontainer {
 
-  }
+  .subcontainer {}
+
   .fontsContainer {
     ul {
       li {
@@ -173,18 +179,7 @@ a {
   }
 }
 
-.forma {
-cursor: url("/FormaFont.png"), pointer;
-}
-.america {
 
-}
-.roobert {
-
-}
-.skelter {
-
-}
 .bskillz {
   font-family: "GT America Exp Bold", sans-serif;
   text-transform: uppercase;
@@ -192,6 +187,32 @@ cursor: url("/FormaFont.png"), pointer;
   margin-block-end: .1rem;
   margin-block-start: .5rem;
 }
+.font {
+  cursor: ne-resize;
+  text-decoration: underline;
+}
+.fontImage {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+
+  &.forma {
+    height: 50px;
+  }
+
+  &.america {
+    height: 50px;
+  }
+
+  &.roobert {
+    height: 50px;
+  }
+
+  &.skelter {
+    height: 150px;
+  }
+}
+
 .pane.cnc {
   .imagesContainer {
     ul {
@@ -201,6 +222,7 @@ cursor: url("/FormaFont.png"), pointer;
     }
   }
 }
+
 .bottomdiv {
   background: rgb(233, 231, 216);
   min-height: 100vh;
@@ -228,7 +250,7 @@ cursor: url("/FormaFont.png"), pointer;
     ul {
       height: 100%;
       width: 100%;
-      
+
       li {
         position: absolute;
         width: 100%;
@@ -299,6 +321,7 @@ cursor: url("/FormaFont.png"), pointer;
   font-family: "GT America Exp Light It";
   src: url("/GT-America-Expanded-Light-Italic-Trial.otf") format("opentype");
 }
+
 @font-face {
   font-family: "GT America Exp Bold";
   src: url("/GT-America-Expanded-Bold-Trial.otf") format("opentype");
