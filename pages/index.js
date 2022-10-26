@@ -9,16 +9,18 @@ import CnC from '../components/CnC'
 export default function Home() {
   const [isShownForma, setIsShownForma] = useState(false);
   const [isShownSkelter, setIsShownSkelter] = useState(false);
-  const [isShownAmerica, setIsShownAmerica] = useState(false);
+  const [isShownHina, setIsShownHina] = useState(false);
   const [isShownRoobert, setIsShownRoobert] = useState(false);
+  const [isShownApple, setIsShownApple] = useState(false);
+  const [isShownNudge, setIsShownNudge] = useState(false);
   const index = {
     forma: {
       yay: () => setIsShownForma(true),
       nay: () => setIsShownForma(false)
     },
-    america: {
-      yay: () => setIsShownAmerica(true),
-      nay: () => setIsShownAmerica(false)
+    hina: {
+      yay: () => setIsShownHina(true),
+      nay: () => setIsShownHina(false)
     },
     skelter: {
       yay: () => setIsShownSkelter(true),
@@ -28,6 +30,14 @@ export default function Home() {
       yay: () => setIsShownRoobert(true),
       nay: () => setIsShownRoobert(false)
     },
+    apple: {
+      yay: () => setIsShownApple(true),
+      nay: () => setIsShownApple(false)
+    },
+    nudge: {
+      yay: () => setIsShownNudge(true),
+      nay: () => setIsShownNudge(false)
+    }
   };
   return (
     <div className={styles.container}>
@@ -44,8 +54,11 @@ export default function Home() {
             src="/FormaFont.svg"
           />
         )}
-        {isShownAmerica && (
-          <img className="fontImage america" src="/AmericaFont.svg" />
+        {isShownHina && (
+          <span className='fontImage hina'>Hina Mincho</span>
+        )}
+        {isShownApple && (
+          <span className='fontImage apple'>Apple Garamond</span>
         )}
         {isShownSkelter && (
           <img
@@ -57,6 +70,13 @@ export default function Home() {
           <img
             className="fontImage roobert"
             src="/RoobertFont.svg"
+          >
+          </img>
+        )}
+        {isShownNudge && (
+          <img
+            className="fontImage nudge"
+            src="/NudgeFont.svg"
           >
           </img>
         )}
@@ -84,20 +104,26 @@ export default function Home() {
                     <li>Trend Forecasting</li>
                     <li>Logo Design</li>
                     <li>JavaScript</li>
-                    <li>React Web Development <br /><span style={{ paddingLeft: "10px" }}>(and some Express/Node/API Development to boot)</span></li>
+                    <li>Web Development <br />
+                      <span>↳Express/Node/APIs</span><br/>
+                      <span>↳Express/Node/APIs</span>
+
+                    </li>
                     <li>Wordpress Development</li>
                   </ul>
                 </div>
                 <div className='businessContainer subcontainer'>
+      
+                  <div className='skillsContainer subcontainer'>
                   <h3 className="bskillz">
-                    business
+                    tech
                   </h3>
                   <ul>
-                    <li><a href="/resume" target="_blank">Resumé</a></li>
-                    <li><a href="https://www.linkedin.com/in/william-andree/" target="_blank">LinkedIn</a></li>
-                    <li><a href="mailto:williamandree@gmail.com">williamandree@gmail.com</a></li>
-                    <li><a href="tel:5738202616">(573) 820-2616</a></li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Visual Studio</li>
                   </ul>
+                </div>
                   <h3 className="bskillz" style={{ marginBlockStart: "1rem" }}>
                     favorite designers
                   </h3>
@@ -113,10 +139,24 @@ export default function Home() {
                   </h3>
                   <ul>
                     <li className='roobert font' onMouseEnter={index.roobert.yay} onMouseLeave={index.roobert.nay}>Roobert</li>
-                    <li className='america font' onMouseEnter={index.america.yay} onMouseLeave={index.america.nay}>GT America</li>
+                    <li className='america font' onMouseEnter={index.hina.yay} onMouseLeave={index.hina.nay}>Hina Mincho</li>
                     <li className='skelter font' onMouseEnter={index.skelter.yay} onMouseLeave={index.skelter.nay}>Skelter</li>
                     <li className='forma font' onMouseEnter={index.forma.yay} onMouseLeave={index.forma.nay}>Forma</li>
+                    <li className='forma font' onMouseEnter={index.apple.yay} onMouseLeave={index.apple.nay}>Apple Garamond</li>
+                    <li className='forma font' onMouseEnter={index.nudge.yay} onMouseLeave={index.nudge.nay}>Nudge</li>
                   </ul>
+                </div>
+                <div className='businessContainer subcontainer'>
+                  <h3 className="bskillz">
+                    business
+                  </h3>
+                  <ul>
+                    <li><a href="/resume" target="_blank">Resumé</a></li>
+                    <li><a href="https://www.linkedin.com/in/william-andree/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:williamandree@gmail.com">williamandree@gmail.com</a></li>
+                    <li><a href="tel:5738202616">(573) 820-2616</a></li>
+                  </ul>
+                 
                 </div>
               </div>
             </div>

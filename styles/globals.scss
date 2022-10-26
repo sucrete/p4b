@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 @mixin slideShow($slideNumber, $uniqueName) {
   // time = total animation time
   // time = (a+b) * n
@@ -164,7 +165,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  column-gap: 70px;
+  justify-content: space-between;
 
   .subcontainer {}
 
@@ -192,7 +193,7 @@ a {
   text-decoration: underline;
 }
 .fontImage {
-  position: absolute;
+  position: fixed;
   right: 70px;
   top: 70px;
 
@@ -200,8 +201,11 @@ a {
     height: 50px;
   }
 
-  &.america {
-    height: 50px;
+  &.hina {
+    font-family: "Hina Mincho";
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 70%;
   }
 
   &.roobert {
@@ -210,6 +214,14 @@ a {
 
   &.skelter {
     height: 150px;
+  }
+  &.nudge {
+    height: 100px;
+  }
+  &.apple {
+    font-size: 4rem;
+    font-family: "Apple Garamond";
+    line-height: 70%;
   }
 }
 
@@ -264,6 +276,7 @@ a {
     }
   }
 
+  
   .caption {
     font-family: "Apple Garamond";
     padding-left: 5px;
