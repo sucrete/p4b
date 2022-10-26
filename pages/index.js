@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Calvin from '../components/Calvin'
 import Votr from '../components/Votr'
 import CnC from '../components/CnC'
+import Poly from '../components/Poly'
 
 export default function Home() {
   const [isShownForma, setIsShownForma] = useState(false);
@@ -103,35 +104,31 @@ export default function Home() {
                     <li>User Experience Design</li>
                     <li>Trend Forecasting</li>
                     <li>Logo Design</li>
-                    <li>JavaScript</li>
                     <li>Web Development <br />
-                      <span>↳Express/Node/APIs</span><br/>
-                      <span>↳Express/Node/APIs</span>
-
+                      <span>⬝ JavaScript</span><br />
+                      <span>⬝ HTML/CSS</span><br />
+                      <span>⬝ Sass</span><br />
+                      <span>⬝ React</span><br />
+                      <span>⬝ Express</span><br />
+                      <span>⬝ Node</span><br />
+                      <span>⬝ Wordpress Development</span><br />
+                      <span>⬝ Git</span>
                     </li>
-                    <li>Wordpress Development</li>
                   </ul>
                 </div>
                 <div className='businessContainer subcontainer'>
-      
-                  <div className='skillsContainer subcontainer'>
-                  <h3 className="bskillz">
-                    tech
-                  </h3>
-                  <ul>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Visual Studio</li>
-                  </ul>
-                </div>
-                  <h3 className="bskillz" style={{ marginBlockStart: "1rem" }}>
-                    favorite designers
-                  </h3>
-                  <ul>
-                    <li><a href="http://tmthyl.uk/" target="_blank">Timothy Luke</a></li>
-                    <li><a href="https://www.instagram.com/d_a_n_i_e_l_s_w_a_n/" target="_blank">Daniel Swan</a></li>
 
-                  </ul>
+                  <div className='skillsContainer subcontainer'>
+                    <h3 className="bskillz">
+                      tech
+                    </h3>
+                    <ul>
+                      <li>Photoshop</li>
+                      <li>Illustrator</li>
+                      <li>Visual Studio</li>
+                    </ul>
+                  </div>
+                 
                 </div>
                 <div className='skillsContainer subcontainer'>
                   <h3 className="bskillz">
@@ -145,6 +142,14 @@ export default function Home() {
                     <li className='forma font' onMouseEnter={index.apple.yay} onMouseLeave={index.apple.nay}>Apple Garamond</li>
                     <li className='forma font' onMouseEnter={index.nudge.yay} onMouseLeave={index.nudge.nay}>Nudge</li>
                   </ul>
+                  <h3 className="bskillz" style={{ marginBlockStart: "1rem" }}>
+                    favorite designers
+                  </h3>
+                  <ul>
+                    <li><a href="http://tmthyl.uk/" target="_blank">Timothy Luke</a></li>
+                    <li><a href="https://www.instagram.com/d_a_n_i_e_l_s_w_a_n/" target="_blank">Daniel Swan</a></li>
+
+                  </ul>
                 </div>
                 <div className='businessContainer subcontainer'>
                   <h3 className="bskillz">
@@ -156,7 +161,7 @@ export default function Home() {
                     <li><a href="mailto:williamandree@gmail.com">williamandree@gmail.com</a></li>
                     <li><a href="tel:5738202616">(573) 820-2616</a></li>
                   </ul>
-                 
+
                 </div>
               </div>
             </div>
@@ -176,6 +181,11 @@ export default function Home() {
           <br />
           <br />
           <Votr />
+          <br />
+          <br />
+          <br />
+          <br />
+          <Poly />
           <br />
           <br />
           <br />

@@ -1,6 +1,6 @@
 const slides = [
-    <img src="/votrlogo.png" />,
-    <img src="/votergraphic2.png" />,
+    <img src="/rosehilllogo.png" />,
+    <img src="/rosehill.png" />,
 ];
 
 const imageSlides = slides.map((slide, index) => {
