@@ -37,6 +37,11 @@ a {
           margin-block-start: 2.5rem;
 }
 
+u {
+  font-family: "Apple Garamond Italic";
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   position: relative;
@@ -61,7 +66,7 @@ ul {
   text-align: justify;
   padding-left: 7%;
   margin-top: 4rem;
-  /* letter-spacing: 2px; */
+  letter-spacing: -0.3px;
 }
 .descripsh--2 {
   width: 100%;
@@ -73,17 +78,48 @@ ul {
   font-family: "GT America Exp Bold", sans-serif;
   text-transform: uppercase;
   /* text-decoration: underline; */
-  font-size: 10px;
-  color: #661414;
+  font-size: 11px;
+  color: black;
   padding-right: 5.5rem;
   letter-spacing: 0.5px;
   /* margin-top: -11px;   */
   float: left;
+  -webkit-animation: colorChanger 20s infinite;
+          animation: colorChanger 20s infinite;
 }
 .barkport--2 {
   color: black;
 }
 
+@-webkit-keyframes colorChanger {
+  from {
+    color: black;
+  }
+  25% {
+    color: #6284FF;
+  }
+  75% {
+    color: #FF0000;
+  }
+  to {
+    color: black;
+  }
+}
+
+@keyframes colorChanger {
+  from {
+    color: black;
+  }
+  25% {
+    color: #6284FF;
+  }
+  75% {
+    color: #FF0000;
+  }
+  to {
+    color: black;
+  }
+}
 a {
   text-decoration: underline;
 }
@@ -117,6 +153,7 @@ a {
   position: fixed;
   right: 70px;
   top: 70px;
+  z-index: 333;
 }
 .fontImage.forma {
   height: 50px;
@@ -258,14 +295,14 @@ a {
   margin-top: 30px;
 }
 .votr .imagesContainer ul .liImage--0 {
-  -webkit-animation: xfade--cal 10.38s 0s infinite;
-          animation: xfade--cal 10.38s 0s infinite;
+  -webkit-animation: xfade--votr 10.38s 0s infinite;
+          animation: xfade--votr 10.38s 0s infinite;
 }
 .votr .imagesContainer ul .liImage--1 {
-  -webkit-animation: sixNine--cal 0.69s 4.5s forwards, xfade--cal 10.38s 5.19s infinite;
-          animation: sixNine--cal 0.69s 4.5s forwards, xfade--cal 10.38s 5.19s infinite;
+  -webkit-animation: sixNine--votr 0.69s 4.5s forwards, xfade--votr 10.38s 5.19s infinite;
+          animation: sixNine--votr 0.69s 4.5s forwards, xfade--votr 10.38s 5.19s infinite;
 }
-@keyframes xfade--cal {
+@-webkit-keyframes xfade--votr {
   0% {
     opacity: 1;
   }
@@ -282,13 +319,104 @@ a {
     opacity: 1;
   }
 }
-@keyframes sixNine--cal {
+@keyframes xfade--votr {
+  0% {
+    opacity: 1;
+  }
+  43.3526011561% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  93.3526011561% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes sixNine--votr {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
+}
+@keyframes sixNine--votr {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rosehill .imagesContainer ul .liImage--0 {
+  -webkit-animation: xfade--rose 15.57s 0s infinite;
+          animation: xfade--rose 15.57s 0s infinite;
+}
+.rosehill .imagesContainer ul .liImage--1 {
+  -webkit-animation: sixNine--rose 0.69s 4.5s forwards, xfade--rose 15.57s 5.19s infinite;
+          animation: sixNine--rose 0.69s 4.5s forwards, xfade--rose 15.57s 5.19s infinite;
+}
+.rosehill .imagesContainer ul .liImage--2 {
+  -webkit-animation: sixNine--rose 0.69s 9.69s forwards, xfade--rose 15.57s 10.38s infinite;
+          animation: sixNine--rose 0.69s 9.69s forwards, xfade--rose 15.57s 10.38s infinite;
+}
+@-webkit-keyframes xfade--rose {
+  0% {
+    opacity: 1;
+  }
+  28.901734104% {
+    opacity: 1;
+  }
+  33.3333333333% {
+    opacity: 0;
+  }
+  95.5684007707% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes xfade--rose {
+  0% {
+    opacity: 1;
+  }
+  28.901734104% {
+    opacity: 1;
+  }
+  33.3333333333% {
+    opacity: 0;
+  }
+  95.5684007707% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes sixNine--rose {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sixNine--rose {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.rosehill .imagesContainer ul li img {
+  border-radius: 10px;
 }
 
 @font-face {

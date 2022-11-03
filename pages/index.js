@@ -6,6 +6,7 @@ import Calvin from '../components/Calvin'
 import Votr from '../components/Votr'
 import CnC from '../components/CnC'
 import Poly from '../components/Poly'
+import Rosehill from '../components/Rosehill'
 
 export default function Home() {
   const [isShownForma, setIsShownForma] = useState(false);
@@ -93,7 +94,39 @@ export default function Home() {
             </div>
             Mr. Collins, meanwhile, was meditating in solitude on what had passed. He thought too well of himself to comprehend on what motives his cousin could refuse him; and though his pride was hurt, he suffered in no other way. His regard for her was quite imaginary; and the possibility of her deserving her mother’s reproach prevented his feeling any regret.
             While the family were in this confusion, Charlotte Lucas came to spend the day with them. She was met in the vestibule by Lydia, who, flying to her, cried in a half whisper, “I am glad you are come, for there is such fun here! What do you think has happened this morning? Mr. Collins has made an offer to Lizzy, and she will not have him.”
-            <div className='descripsh descripsh--2'>
+            
+            <div className='guiderails'></div>
+          </div>
+
+        </div>
+        <section className='bottomdiv'>
+          <Calvin />
+          <br />
+          <br />
+          <br />
+          <br />
+          <CnC />
+          <br />
+          <br />
+          <br />
+          <br />
+          <Votr />
+          <br />
+          <br />
+          <br />
+          <br />
+          <Rosehill/>
+          <br />
+          <br />
+          <br />
+          <br />
+          <Poly />
+          <br />
+          <br />
+          <br />
+          <br />
+        </section>
+        <div className='descripsh descripsh--2'>
               <div className="detailsContainer">
                 <div className='skillsContainer subcontainer'>
                   <h3 className="bskillz">
@@ -165,32 +198,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='guiderails'></div>
-          </div>
-
-        </div>
-        <section className='bottomdiv'>
-          <Calvin />
-          <br />
-          <br />
-          <br />
-          <br />
-          <CnC />
-          <br />
-          <br />
-          <br />
-          <br />
-          <Votr />
-          <br />
-          <br />
-          <br />
-          <br />
-          <Poly />
-          <br />
-          <br />
-          <br />
-          <br />
-        </section>
       </main>
     </div>
   )
