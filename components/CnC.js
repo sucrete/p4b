@@ -9,7 +9,7 @@ export default function CnC() {
                         </li>
                     </ul>
                 </div>
-                <span className="caption">Typesetting for independent Kansas City newspaper <u>The City And The City</u>. Fonts → IvyPresto, Grafiks, Apple Garamond</span>
+                <span className="caption">Typesetting for independent Kansas City newspaper <u>The City And The City</u>. Fonts → IvyPresto, Nudge, Apple Garamond</span>
             </div>
         </>
     );

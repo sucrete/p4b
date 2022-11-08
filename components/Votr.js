@@ -14,7 +14,7 @@ export default function Votr() {
                 <div className="imagesContainer">
                     <ul>{imageSlides}</ul>
                 </div>
-                <span className="caption">Assets for the short-lived voting information app, <u>The Voter's Companion</u></span>
+                <span className="caption">Assets for the voting information app, <u>The Voter's Companion</u></span>
             </div>
         </>
     );

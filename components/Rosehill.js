@@ -1,3 +1,4 @@
+import Link from 'next/link';
 const slides = [
     <img src="/rosehilllogo.png" />,
     <img src="/rosehillwbg2.png" />,
@@ -15,7 +16,7 @@ export default function Rosehill() {
                 <div className="imagesContainer">
                     <ul>{imageSlides}</ul>
                 </div>
-                <span className="caption">Assets for the short-lived voting information app, <u>The Voter's Companion</u></span>
+                <span className="caption">Assets for garden <Link href="www.rosehillgardens.com" passHref={true}><u>Rosehill Gardens</u></Link></span>
             </div>
         </>
     );

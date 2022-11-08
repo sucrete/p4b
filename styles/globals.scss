@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
 @mixin slideShow($slideNumber, $uniqueName) {
   // time = total animation time
   // time = (a+b) * n
@@ -109,10 +110,12 @@ a {
   margin-block-start: 2.5rem;
   // color: #C4FF5D;
 }
+
 u {
   font-family: "Apple Garamond Italic";
   text-decoration: none;
 }
+
 ul {
   list-style: none;
   position: relative;
@@ -136,7 +139,8 @@ ul {
   padding-left: 7%;
   margin-top: 4rem;
 
-  letter-spacing: -.3px; 
+  letter-spacing: -.3px;
+
   &--2 {
     width: 100%;
     padding-left: 0%;
@@ -160,20 +164,25 @@ ul {
     color: black;
   }
 }
+
 @keyframes colorChanger {
   from {
     color: black
   }
+
   25% {
     color: #6284FF;
   }
+
   75% {
     color: #FF0000;
   }
+
   to {
     color: black;
   }
 }
+
 a {
   text-decoration: underline;
 }
@@ -183,8 +192,6 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-
-  .subcontainer {}
 
   .fontsContainer {
     ul {
@@ -205,15 +212,18 @@ a {
   margin-block-end: .1rem;
   margin-block-start: .5rem;
 }
+
 .font {
   cursor: ne-resize;
   text-decoration: underline;
 }
+
 .fontImage {
   position: fixed;
   right: 70px;
   top: 70px;
-  z-index:333;
+  z-index: 333;
+
   &.forma {
     height: 50px;
   }
@@ -232,9 +242,11 @@ a {
   &.skelter {
     height: 150px;
   }
+
   &.nudge {
     height: 100px;
   }
+
   &.apple {
     font-size: 4rem;
     font-family: "Apple Garamond";
@@ -251,6 +263,7 @@ a {
     }
   }
 }
+
 .pane.poly {
   .imagesContainer {
     ul {
@@ -302,11 +315,22 @@ a {
     }
   }
 
-  
+
   .caption {
     font-family: "Apple Garamond";
     padding-left: 5px;
+
   }
+}
+
+.liImage:after {
+  font-family: "Melody Regular";
+  letter-spacing: 3px;
+  font-size: 9px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 777;
 }
 
 .calvin {
@@ -314,6 +338,18 @@ a {
   .imagesContainer {
     ul {
       @include slideShow(2, "cal");
+
+      li {
+        &.liImage--0:after {
+          content: '1/3';
+        }
+        &.liImage--1:after {
+          content: '2/3'
+        }
+        &.liImage--2:after {
+          content: '3/3'
+        }
+      }
     }
   }
 }
@@ -324,22 +360,41 @@ a {
   .imagesContainer {
     ul {
       @include slideShow(1, "votr");
-      // .liImage--0, .liImage--1, .liImage--2 {
-
-      // }
+      li {
+        &.liImage--0:after {
+          content: '1/2'
+        }
+        &.liImage--1:after {
+          content: '2/2'
+        }
+      }
 
     }
   }
 }
+
 .rosehill {
   .imagesContainer {
     ul {
       @include slideShow(2, "rose");
-        li {
-          img {
-            border-radius: 10px;
-          }
+
+      li {
+        img {
+          border-radius: 10px;
         }
+        
+      }
+      li {
+        &.liImage--0:after {
+          content: '1/3';
+        }
+        &.liImage--1:after {
+          content: '2/3'
+        }
+        &.liImage--2:after {
+          content: '3/3'
+        }
+      }
     }
   }
 }
@@ -359,14 +414,6 @@ a {
   font-family: "Melody Regular";
   src: url("/BLMelody-Regular.otf") format("opentype");
 }
-
-
-
-@font-face {
-  font-family: "Jabin";
-  src: url("/Jabin-Typeface.woff2") format('woff2');
-}
-
 
 @font-face {
   font-family: "GT America Exp Light It";
