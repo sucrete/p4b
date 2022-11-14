@@ -79,7 +79,7 @@
   border-width: .5px;
   height: 170px;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 1rem;
 }
 
 a {
@@ -133,17 +133,16 @@ ul {
 .descripsh {
   width: 70%;
   font-family: "Apple Garamond";
-  font-size: 1.1rem;
-  line-height: 120%;
+  font-size: 1.9rem;
+  line-height: 100%;
   text-align: justify;
   padding-left: 7%;
   margin-top: 4rem;
-
-  letter-spacing: -.3px;
-
+  letter-spacing: -.2px;
+color: rgb(74, 47, 19);
   &--2 {
-    width: 100%;
-    padding-left: 0%;
+    // width: 100%;
+    // padding-left: 0%;
     margin-top: 1rem;
   }
 }
@@ -152,13 +151,14 @@ ul {
   font-family: "GT America Exp Bold", sans-serif;
   text-transform: uppercase;
   /* text-decoration: underline; */
-  font-size: 11px;
+  font-size: 10px;
+  color: rgb(245, 105, 4);
   color: black;
   padding-right: 5.5rem;
   letter-spacing: .5px;
   /* margin-top: -11px;   */
   float: left;
-  animation: colorChanger 20s infinite;
+  // animation: colorChanger 5s infinite;
 
   &--2 {
     color: black;
@@ -167,19 +167,17 @@ ul {
 
 @keyframes colorChanger {
   from {
-    color: black
+    color: #f0ffad
   }
 
-  25% {
-    color: #6284FF;
+  50% {
+    color: white;
   }
 
-  75% {
-    color: #FF0000;
-  }
+ 
 
   to {
-    color: black;
+    color: #f0ffad;
   }
 }
 
@@ -416,8 +414,26 @@ a {
 }
 
 @font-face {
-  font-family: "GT America Exp Light It";
-  src: url("/GT-America-Expanded-Light-Italic-Trial.otf") format("opentype");
+  font-family: "Nudge";
+  src: url("/Nudge.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Nudge Light";
+  src: url("/Nudge-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Nudge Regular";
+  src: url("/Nudge-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Nudge Thin";
+  src: url("/Nudge-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "Nudge T";
+  src: url("/NudgeT.otf") format("opentype");
 }
 
 @font-face {
